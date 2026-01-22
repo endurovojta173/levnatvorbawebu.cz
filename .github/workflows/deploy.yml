@@ -35,3 +35,4 @@ jobs:
         local-dir: ./dist/ 
         server-dir: ./www/       
         security: loose
+        dangerous-clean-slate: true
