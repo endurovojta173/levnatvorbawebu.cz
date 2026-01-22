@@ -1,0 +1,22 @@
+name: Deploy na Hukot
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  web-deploy:
+    name: 🎉 Nahrávám na server
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Stahuji nejnovější kód
+      uses: actions/checkout@v4
+    
+    - name: 📂 Kopíruji na FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: ./www/  # Tady pozor: Hukot mívá složku www nebo public_html
