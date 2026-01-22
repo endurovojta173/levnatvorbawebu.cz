@@ -36,5 +36,5 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         # TOTO JE KLÍČOVÉ:
         local-dir: ./dist/ 
-        server-dir: ./       # Pokud máte na FTP prázdnou složku www, nechte ./
+        server-dir: ./www       # Pokud máte na FTP prázdnou složku www, nechte ./
         security: loose
