@@ -1,4 +1,4 @@
-name: Deploy na Hukot
+name: Deploy React na Hukot
 
 on:
   push:
@@ -7,17 +7,34 @@ on:
 
 jobs:
   web-deploy:
-    name: 🎉 Nahrávám na server
+    name: 🎉 Build & Deploy
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Stahuji nejnovější kód
       uses: actions/checkout@v4
-    
-    - name: 📂 Kopíruji na FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+
+    # 1. PŘIDÁNO: Musíme mít Node.js, abychom mohli sestavit aplikaci
+    - name: ⚙️ Nastavuji Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
+
+    # 2. PŘIDÁNO: Instalace knihoven (React, Vite, atd.)
+    - name: 📦 Instaluji závislosti
+      run: npm ci
+
+    # 3. PŘIDÁNO: Tady se děje magie - výroba složky "dist"
+    - name: 🏗️ Build projektu
+      run: npm run build
+
+    # 4. UPRAVENO: Nahráváme jen hotovou složku "dist"
+    - name: 📂 Kopíruji složku dist na FTP
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: ./www/  # Tady pozor: Hukot mívá složku www nebo public_html
+        # TOTO JE KLÍČOVÉ:
+        local-dir: ./dist/ 
+        server-dir: ./       # Pokud máte na FTP prázdnou složku www, nechte ./
         security: loose
