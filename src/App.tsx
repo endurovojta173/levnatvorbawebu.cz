@@ -1,34 +1,28 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // Jednoduchý state pro ukázku
+  const [zajem, setZajem] = useState(false)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div style={{ maxWidth: '800px', margin: '0 auto', padding: '2rem', textAlign: 'center' }}>
+      <h1>Levná Tvorba Webu</h1>
+      <p>Ahoj, jsem student z MENDELU a tohle je můj první web v Reactu.</p>
+      
+      <div style={{ display: 'grid', gap: '1rem', marginTop: '2rem' }}>
+        <div style={{ border: '1px solid #ccc', padding: '1rem', borderRadius: '8px' }}>
+          <h3>Webové stránky</h3>
+          <p>Rychlé, moderní, v Reactu.</p>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+      <button 
+        onClick={() => setZajem(!zajem)}
+        style={{ marginTop: '2rem', padding: '10px 20px', cursor: 'pointer' }}
+      >
+        {zajem ? 'Díky za zájem! Ozvu se.' : 'Mám zájem o web'}
+      </button>
+    </div>
   )
 }
 
