@@ -1,6 +1,8 @@
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Services from "./Services";
+import Pricing from "./Pricing";
+import Contacts from "./Contacts";
 
 export default function App() {
   return (
@@ -10,6 +12,8 @@ export default function App() {
       <Hero />
 
       <Services />
+
+      <Pricing />
     
 
       <section id="projects" className="py-32 px-6 bg-brand-card/30">
@@ -19,17 +23,11 @@ export default function App() {
         </div>
       </section>
 
-      <section id="contact" className="py-40 px-6 text-center">
-        <h2 className="text-5xl md:text-8xl font-medium mb-8">Pojďme to <span className="text-brand-primary">spustit.</span></h2>
-        <a href="mailto:info@Levnatvorbawebu.cz" className="text-xl text-slate-400 hover:text-white transition-colors underline decoration-brand-primary decoration-2 underline-offset-8">
-          info@Levnatvorbawebu.cz
-        </a>
-      </section>
+      <Contacts />
     </div>
   );
 }
-
-// Malá pomocná komponenta pro nadpisy sekcí (Lightspeed styl)
+//Heading component used in various sections
 function SectionHeading({ title, subtitle }: { title: string, subtitle: string }) {
   return (
     <div className="mb-16">
