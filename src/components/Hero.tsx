@@ -54,7 +54,7 @@ export default function Hero() {
           Jsem student otevřené informatiky z <span className="text-white font-medium">MENDELU</span> a stavím weby, které vypadají dobře, letí jako vítr, ale nezruinují váš rozpočet. Rychlost, kvalitní design a spolehlivá komunikace. Zaměřuji se jak na uživatelsky přívětivý wordpress, tak na weby nakódované na míru.
         </motion.p>
 
-        {/* Buttons */}
+        {/* Buttons */}  
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -72,8 +72,9 @@ export default function Hero() {
             Prohlédnout práci
           </button>
         </motion.div>
+        *
       </div>
-
+        
       {/* Tech Stack Ribbon */}
       <div className="w-full mt-10 py-6 overflow-hidden border-y border-brand-border bg-brand-card/30 backdrop-blur-sm">
         <motion.div 
@@ -103,6 +104,8 @@ export default function Hero() {
           ))}
         </motion.div>
       </div>
+       
+      
     </section>
   );
 }
