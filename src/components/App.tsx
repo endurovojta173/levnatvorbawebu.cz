@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import Services from "./Services";
+import Pricing from "./Pricing";
 
 export default function App() {
   return (
@@ -10,6 +11,8 @@ export default function App() {
       <Hero />
 
       <Services />
+
+      <Pricing />
     
 
       <section id="projects" className="py-32 px-6 bg-brand-card/30">
