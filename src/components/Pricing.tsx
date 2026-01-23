@@ -134,6 +134,7 @@ export default function Pricing() {
           price="350 Kč/hod" 
           description="Ideální pro weby, na kterých chcete provést menší změny, aktualizace nebo opravy."
           features={[
+            "Schopnost upravit jakýkoliv web",
             "Aktualizace obsahu",
             "Opravy chyb a bugů",
             "Optimalizace rychlosti",
