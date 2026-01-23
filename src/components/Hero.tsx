@@ -72,7 +72,6 @@ export default function Hero() {
             Prohlédnout práci
           </button>
         </motion.div>
-        *
       </div>
         
       {/* Tech Stack Ribbon */}
