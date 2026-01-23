@@ -144,36 +144,35 @@ export default function Pricing() {
           ]}
         />
 
-        {/* Standart web */}
+        {/* Hand made web */}
         <PricingCard 
           title="Webová stránka na míru" 
           price="10 000 Kč" 
           description="Nejoblíbenější volba pro náročné uživatele, kteří hledají kvalitní řešení."
           isPopular
           features={[
-            "Vše z balíčku Start",
-            "Unikátní úpravy designu",
-            "Rychlostní optimalizace (Cache)",
-            "Napojení na Google Analytics",
-            "Možnost blogu/novinek",
-            "Zálohování webu",
-            "Prioritní podpora"
+            "Kompletní návrh na míru",
+            "Unikátní design",
+            "Funkční a rychlá webová aplikace",
+            "Plně zabezpečené řešení",
+            "Základní nastavení SEO",
+            "Prioritní podpora",
+            "Možnost komplexních funkcí dle požadavků"
           ]}
         />
 
-        {/* Compelex web app/Eshop */}
+        {/* Web rework */}
         <PricingCard 
           title="Předělání webu" 
           price="5 000 Kč" 
-          description="Komplexní řešení nebo malý e-shop na WooCommerce."
+          description="Nejlepší možnost při přechodu ze starého webu na moderní a funkční řešení."
           features={[
-            "Vše z balíčku Standard",
-            "E-shop (WooCommerce)",
-            "Platební brána Stripe, GoPay apod.",
-            "Složité webové aplikace a funkce",
-            "Pokročilé SEO a filtry",
-            "Automatizace objednávek",
-            "Kompletní návody pro správu webu"
+            "Převedení obsahu na nový web",
+            "Zachování původního Designu nebo vytvoření nového",
+            "Oprava chyb a optimalizace",
+            "Otestování a oprava zobrazení pro mobilní zařízení",
+            "Zrychlení načítání",
+            "Doporučení na případné změny na webu",
           ]}
         />
 
