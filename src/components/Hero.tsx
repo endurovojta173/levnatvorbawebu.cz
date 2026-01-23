@@ -54,28 +54,34 @@ export default function Hero() {
           Jsem student otevřené informatiky z <span className="text-white font-medium">MENDELU</span> a stavím weby, které vypadají dobře, letí jako vítr, ale nezruinují váš rozpočet. Rychlost, kvalitní design a spolehlivá komunikace. Zaměřuji se jak na uživatelsky přívětivý wordpress, tak na weby nakódované na míru.
         </motion.p>
 
-        {/* Buttons */}  
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-xs sm:max-w-none"
+      {/* Buttons */}  
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.4 }}
+        className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-xs sm:max-w-none"
+      >
+  
+      {/* I want web button */}
+      <a 
+        href="#contact" 
+        className="w-full sm:w-auto group relative bg-white text-black font-bold py-4 px-10 rounded-2xl overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.2)] text-center cursor-pointer"
         >
-          <button className="w-full sm:w-auto group relative bg-white text-black font-bold py-4 px-10 rounded-2xl overflow-hidden transition-all hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,255,255,0.2)]">
-            <span className="relative z-10 flex items-center justify-center gap-2">
-              Chci web <HiArrowRight className="group-hover:translate-x-1 transition-transform" />
-            </span>
-            <div className="absolute inset-0 bg-brand-primary translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-          </button>
-          
-          <button className="w-full sm:w-auto px-8 py-4 rounded-2xl border border-brand-border bg-brand-card/50 hover:bg-white/5 transition-colors text-slate-300 font-medium text-center">
-            Prohlédnout práci
-          </button>
+        <span className="relative z-10 flex items-center justify-center gap-2">
+          Chci web <HiArrowRight className="group-hover:translate-x-1 transition-transform" />
+        </span>
+        {/* Green hover */}
+        <div className="absolute inset-0 bg-brand-primary translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+        </a>
+        {/* Show projetcs button*/}
+        <a href="#projects" className="w-full sm:w-auto px-8 py-4 rounded-2xl border border-brand-border bg-brand-card/50 hover:bg-white/5 transition-colors text-slate-300 font-medium text-center cursor-pointer">
+        Prohlédnout práci
+        </a>
         </motion.div>
-      </div>
+        </div>
         
-      {/* Tech Stack Ribbon */}
-      <div className="w-full mt-10 py-6 overflow-hidden border-y border-brand-border bg-brand-card/30 backdrop-blur-sm">
+        {/* Tech Stack Ribbon */}
+        <div className="w-full mt-10 py-6 overflow-hidden border-y border-brand-border bg-brand-card/30 backdrop-blur-sm">
         <motion.div 
           animate={{ x: [0, -1500] }}
           transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
