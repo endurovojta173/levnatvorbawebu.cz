@@ -70,7 +70,7 @@ export default function Pricing() {
           description="Nejoblíbenější volba pro nenáročné uživatele."
           isPopular
           features={[
-            "Vše z balíčku Start",
+            "Vše z balíčku Jednostránkový web",
             "Unikátní úpravy designu",
             "Rychlostní optimalizace (Cache)",
             "Napojení na Google Analytics",
@@ -86,7 +86,7 @@ export default function Pricing() {
           price="8 000 Kč" 
           description="Komplexní řešení nebo malý e-shop na WooCommerce."
           features={[
-            "Vše z balíčku Standard",
+            "Vše z balíčku Vícestránkový web",
             "E-shop (WooCommerce)",
             "Platební brána Stripe, GoPay apod.",
             "Složité webové aplikace a funkce",
