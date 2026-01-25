@@ -7,12 +7,11 @@ export default function Contact() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <section id="contact" className="relative py-32 px-4 overflow-hidden">
+    <section id="contact" className="relative py-12 md:py-24 px-4 overflow-hidden">
       {/* Background */}
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-brand-primary/5 blur-[120px] rounded-full pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto relative z-10">
-        
+      <div className="max-w-7xl mx-auto relative z-10">        
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -75,7 +75,7 @@ export default function Projects() {
   );
 
   return (
-    <section id="projects" className="relative py-24 px-4 overflow-hidden min-h-screen">
+    <section id="projects" className="py-12 md:py-24 px-4 md:px-6 max-w-8xl mx-auto">
       
       {/*Glow effect */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-primary/5 blur-[120px] rounded-full pointer-events-none" />

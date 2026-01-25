@@ -3,7 +3,7 @@ import { HiCheck, HiSparkles } from "react-icons/hi2";
 
 export default function Pricing() {
   return (
-        <section id="pricing" className="py-24 px-4 md:px-6 max-w-6xl mx-auto">
+        <section id="pricing" className="py-12 md:py-24 px-4 md:px-6 max-w-7xl mx-auto">
         
         {/* Heading */}
         <motion.div 

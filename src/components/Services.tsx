@@ -7,7 +7,7 @@ import { FaWordpress,
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 px-4 md:px-6 max-w-6xl mx-auto">
+    <section id="services" className="py-12 md:py-24 px-4 md:px-6 max-w-7xl mx-auto">
       {/* Heading */}
       <motion.div 
         initial={{ opacity: 0, x: -20 }}

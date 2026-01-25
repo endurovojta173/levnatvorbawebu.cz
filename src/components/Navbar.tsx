@@ -22,7 +22,7 @@ export default function Navbar() {
         {/* Logo section */}
         <a href="#home" className="flex items-center gap-2.5 pl-1 group">
           <div className="w-8 h-8 bg-brand-primary rounded-lg flex items-center justify-center shadow-[0_0_15px_rgba(34,197,94,0.3)] group-hover:scale-110 transition-transform">
-            <img src="/white_logo.png" alt="Logo" className="w-5 h-5" /> 
+            <img src="/img/white_logo.png" alt="Logo" className="w-5 h-5" /> 
           </div>
           <span className="font-bold text-sm tracking-tighter hidden xs:block text-white">
             Levnatvorbawebu<span className="text-brand-primary">.cz</span>
