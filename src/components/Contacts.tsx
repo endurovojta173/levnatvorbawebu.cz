@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { HiEnvelope, HiMapPin, HiPaperAirplane, HiChevronDown } from "react-icons/hi2";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhone  } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   const currentYear = new Date().getFullYear();
@@ -167,6 +168,10 @@ function ContactForm() {
         )}
       </button>
 
+      <p className="text-xs text-slate-500 mt-4 text-center">
+        Odesláním formuláře souhlasíte se <a href="/privacy" className="underline hover:text-white">zpracováním osobních údajů</a>.
+      </p>
+
       {/* Result */}
       {result && (
         <p className={`text-center text-sm mt-4 ${result.includes("odeslána") ? "text-green-400" : "text-red-400"}`}>
@@ -177,7 +182,7 @@ function ContactForm() {
   );
 }
 
-// ----- Components -----
+// Components for contact info and social buttons
 function ContactItem({ icon, text, href }: any) {
   const Wrapper = href ? "a" : "div";
   return (
