@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { HiEnvelope, HiMapPin, HiPaperAirplane, HiChevronDown } from "react-icons/hi2";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhone  } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 export default function Contact() {
   const currentYear = new Date().getFullYear();
