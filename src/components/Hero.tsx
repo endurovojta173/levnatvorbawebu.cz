@@ -30,7 +30,7 @@ export default function Hero() {
         >
           <div className="absolute inset-0 bg-brand-primary/40 blur-3xl rounded-full scale-150 pointer-events-none" />
           <div className="relative w-20 h-20 md:w-24 md:h-24 bg-brand-bg border-2 border-brand-primary rounded-3xl flex items-center justify-center shadow-[0_0_30px_rgba(34,197,94,0.3)] p-4">
-            <img src="/green_logo.png" alt="Logo" className="w-full h-full object-contain" />
+            <img src="/img/green_logo.png" alt="Logo" className="w-full h-full object-contain" />
           </div>
         </motion.div>
 

@@ -2,17 +2,17 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { HiEnvelope, HiMapPin, HiPaperAirplane, HiChevronDown } from "react-icons/hi2";
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaPhone  } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <section id="contact" className="relative py-32 px-4 overflow-hidden">
+    <section id="contact" className="relative py-12 md:py-24 px-4 overflow-hidden">
       {/* Background */}
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-brand-primary/5 blur-[120px] rounded-full pointer-events-none" />
 
-      <div className="max-w-6xl mx-auto relative z-10">
-        
+      <div className="max-w-7xl mx-auto relative z-10">        
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -168,6 +168,10 @@ function ContactForm() {
         )}
       </button>
 
+      <p className="text-xs text-slate-500 mt-4 text-center">
+        Odesláním formuláře souhlasíte se <a href="/privacy" className="underline hover:text-white">zpracováním osobních údajů</a>.
+      </p>
+
       {/* Result */}
       {result && (
         <p className={`text-center text-sm mt-4 ${result.includes("odeslána") ? "text-green-400" : "text-red-400"}`}>
@@ -178,7 +182,7 @@ function ContactForm() {
   );
 }
 
-// ----- Components -----
+// Components for contact info and social buttons
 function ContactItem({ icon, text, href }: any) {
   const Wrapper = href ? "a" : "div";
   return (
